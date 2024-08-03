@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  
+  .landing-page-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../assets/images/backgroundimg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: left; 
+    padding: 10px;
+    color: #fff;
+    
+  }
+  
+  .landing-page-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: 1;
+    
+    
+  }
+  
+  
+  .landing-page-contentt {
+    position: relative;
+    z-index: 2; 
+    color: #fff;
+    width: 600px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    
+  }
+  
+  .landing-page-contentt h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .landing-page-contentt p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .landing-page-contentt hr{
+    border: 2px solid gray; 
+    width: 50px; 
+    margin: 15px 90px;
+  }
+
+  .company-info{
+    position: relative;
+    z-index: 2; 
+    color: #fff; 
+    width: 70%; 
+    margin-left: 5%;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    
+  }
+
+  .company-info h4{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 19px;
+  }
+
+  .company-info p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  
+  
+  .get-started-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 15px 50px;
+  }
+  
+  .get-started-button:hover {
+    background-color: #45a049;
+  }
+  
